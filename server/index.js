@@ -21,7 +21,7 @@ app.use("/api/exam", examRoutes);
 app.use("/api/results", resultsRoutes);
 app.use("/api/folders", folderRoutes);
 
-mongoose.connect("mongodb://127.0.0.1:27017/entrance-exam")
+mongoose.connect("mongodb://127.0.0.1:27017/entrance_exam")
     .then(() => {
         app.listen("5000", "0.0.0.0", () => {
             console.log("Database is ready")
